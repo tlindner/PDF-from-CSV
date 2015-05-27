@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		2229C6A71B163B17008BFC2D /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		22E64D141B16364A00CFCD3F /* PDF from CSV.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "PDF from CSV.js"; sourceTree = "<group>"; };
 		22E64D151B16364A00CFCD3F /* Read Me.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "Read Me.rtfd"; sourceTree = "<group>"; };
 		22E64D161B16390200CFCD3F /* Sample.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = Sample.csv; sourceTree = "<group>"; };
@@ -17,6 +18,7 @@
 			isa = PBXGroup;
 			children = (
 				22E64D141B16364A00CFCD3F /* PDF from CSV.js */,
+				2229C6A71B163B17008BFC2D /* README.txt */,
 				22E64D161B16390200CFCD3F /* Sample.csv */,
 				22E64D151B16364A00CFCD3F /* Read Me.rtfd */,
 			);
