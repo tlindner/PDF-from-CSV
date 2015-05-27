@@ -38,7 +38,7 @@ var doCompose = app.trustedFunction( function ()
 	for (var i = 1; i < listLength; i++) {
 		var comma_position = list[i].lastIndexOf(",");
 		var count = parseInt(list[i].substring(comma_position+1));
-		var full_path = path + list[i].substring(0, comma_position-2);
+		var full_path = path + list[i].substring(0, comma_position);
 		//app.alert( full_path, 3 );
 		
 		// add 'count' number of copies
