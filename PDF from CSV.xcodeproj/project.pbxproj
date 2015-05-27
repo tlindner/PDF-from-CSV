@@ -6,10 +6,17 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		22E64D141B16364A00CFCD3F /* PDF from CSV.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "PDF from CSV.js"; sourceTree = "<group>"; };
+		22E64D151B16364A00CFCD3F /* Read Me.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "Read Me.rtfd"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		22E64D0D1B1632A700CFCD3F = {
 			isa = PBXGroup;
 			children = (
+				22E64D141B16364A00CFCD3F /* PDF from CSV.js */,
+				22E64D151B16364A00CFCD3F /* Read Me.rtfd */,
 			);
 			sourceTree = "<group>";
 		};
