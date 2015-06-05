@@ -36,18 +36,24 @@ var doCompose = app.trustedFunction( function ()
 	
 	// for each line add PDF file
 	for (var i = 1; i < listLength; i++) {
-		var comma_position = list[i].lastIndexOf(",");
-		var count = parseInt(list[i].substring(comma_position+1));
-		var full_path = path + list[i].substring(0, comma_position);
-		//app.alert( full_path, 3 );
 		
-		// add 'count' number of copies
-		for ( var j = 0; j < count; j++ ) {
-			newDoc.insertPages({
-				nPage: newDoc.numPages-1,
-				cPath: full_path,
-				nStart: 0,
-				});
+		if ( list[i].substring(0,1) != "#" ) {
+			var comma_position = list[i].lastIndexOf(",");
+			var count = parseInt(list[i].substring(comma_position+1));
+			var temp_path = list[i].substring(0, comma_position);
+			comma_position = temp_path.lastIndexOf(",");
+			var page_number = parseInt(temp_path.substring(comma_position+1));
+			var full_path = path + temp_path.substring(0, comma_position)
+			//app.alert( full_path, 3 );
+		
+			// add 'count' number of copies
+			for ( var j = 0; j < count; j++ ) {
+				newDoc.insertPages({
+					nPage: newDoc.numPages-1,
+					cPath: full_path,
+					nStart: page_number-1,
+					});
+				}
 			}
 		}
 	
